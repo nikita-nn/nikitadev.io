@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root,
+  body {
+    @apply bg-black lg:p-24 lg:pt-14 p-5 text-white font-mono;
+  }
+
+  section {
+    @apply mt-24 flex flex-col gap-12;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply transition-transform hover:scale-110 duration-300;
+  }
+  .card {
+    @apply border-[1px] border-white w-full rounded-lg p-5 flex flex-col gap-4 justify-between;
+  }
+  .main-grid {
+    @apply grid lg:grid-cols-6 grid-cols-3 gap-9;
+  }
+}
