@@ -45,6 +45,18 @@ export const projects: ProjectsInfo[] = [
     position: "Frontend + Backend",
   },
   {
+    name: "LMS2.0 Webinars",
+    description: "Платформа для онлайн видеоконференцсвязи на основе Jitsi Meet",
+    position: "Backend",
+    link: "https://webinars.itmo.xyz/"
+  },
+  {
+    name: "My.ITMO Tools",
+    description: "Проект позволяющий оптимизировать и улучшить опыт записи на физическую культуру в сервисе My.ITMO",
+    position: "Backend",
+    link: "https://github.com/nikita-nn/myItmoTools-backend"
+  },
+  {
     name: "SimpleBanking",
     description:
       "PET проект, предоставляющий базовую функциональность онлайн-банкинга",
