@@ -10,11 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-animate-on-scroll": "^2.1.8",
     "autoprefixer": "^10.4.20",
-    "lucide-react": "^0.441.0",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
+    "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.12"
   },

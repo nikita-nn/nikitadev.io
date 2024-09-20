@@ -1,6 +1,18 @@
-import { projects, technologies } from "./data/data.ts";
-
+import { Position, projects, socials, technologies } from "./data/data.ts";
 export default function App() {
+  const choosePosition = (position: Position) => {
+    switch (position) {
+      case Position.BACKEND:
+        return "Backend";
+      case Position.FRONTEND:
+        return "Frontend";
+      case Position.FULLSTACK:
+        return "Frontend + Backend";
+      default:
+        return null;
+    }
+  };
+
   return (
     <main>
       <section className="mt-0 flex flex-col gap-4">
@@ -11,8 +23,18 @@ export default function App() {
         <h2>Мой stack:</h2>
         <div className={"main-grid"}>
           {technologies.map((tech) => (
-            <a href={tech.link} target="_blank">
+            <a href={tech.link} target="_blank" key={tech.link}>
               <img src={tech.icon} alt="" className={"w-full logo"} />
+            </a>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h2>Ссылки:</h2>
+        <div className={"grid lg:grid-cols-8 grid-cols-3 gap-3"}>
+          {socials.map((social) => (
+            <a href={social.link} target="_blank" key={social.link}>
+              {social.name}
             </a>
           ))}
         </div>
@@ -21,15 +43,11 @@ export default function App() {
         <h2>Мои проекты:</h2>
         <div className={"projects-grid"}>
           {projects.map((project) => (
-            <div className={"card"}>
+            <div className={"card"} key={project.name}>
               <h1 className={"text-lg"}>{project.name}</h1>
               <p>{project.description}</p>
-              <p className={"font-bold"}>{project.position}</p>
-              <a
-                href={project.link}
-                className={"underline w-full"}
-                target={"_blank"}
-              >
+              <p className={"font-bold"}>{choosePosition(project.position)}</p>
+              <a href={project.link} target={"_blank"}>
                 {project.link}
               </a>
             </div>

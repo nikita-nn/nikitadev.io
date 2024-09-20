@@ -19,6 +19,9 @@
   h2 {
     @apply text-4xl;
   }
+  a {
+    @apply underline w-full break-words;
+  }
 }
 
 @layer components {

@@ -1,3 +1,14 @@
+interface SocialsInterface {
+  name: string;
+  link: string;
+}
+
+export const socials: SocialsInterface[] = [
+  { name: "Telegram", link: "https://t.me/googleadsusd" },
+  { name: "Vkontakte", link: "https://vk.com/visadaliva" },
+  { name: "Github", link: "https://github.com/nikita-nn" },
+];
+
 interface Technology {
   icon: string;
   link: string;
@@ -15,26 +26,32 @@ export const technologies: Technology[] = [
   { icon: "/html5.svg", link: "https://html5.org" },
 ];
 
-interface ProjectsInfo {
+interface ProjectInfo {
   name: string;
   description: string;
-  position: string;
+  position: Position;
   link: string;
 }
 
-export const projects: ProjectsInfo[] = [
+export enum Position {
+  FRONTEND,
+  BACKEND,
+  FULLSTACK,
+}
+
+export const projects: ProjectInfo[] = [
   {
     name: "LMS2.0",
     description:
       "LMS 2.0 — это платформа, предлагающая развитие практических навыков для профессионалов в области кибербезопасности, системного администрирования и т. д.",
-    position: "Frontend + Backend",
+    position: Position.FULLSTACK,
     link: "https://lms.itmo.xyz/",
   },
   {
     name: "BIOCON 2024",
     description:
       "Веб-сайт международной конференции по промышленной биотехнологии в Альметьевске (Республика Татарстан)",
-    position: "Frontend + Backend",
+    position: Position.FULLSTACK,
     link: "https://biocon.international/",
   },
   {
@@ -42,27 +59,27 @@ export const projects: ProjectsInfo[] = [
     description:
       "Онлайн-магистратура на базе Университета ИТМО совместно с Positive Technologies",
     link: "https://mcs.itmo.ru/",
-    position: "Frontend + Backend",
+    position: Position.FULLSTACK,
   },
   {
     name: "LMS2.0 Webinars",
     description:
       "Платформа для онлайн видеоконференцсвязи на основе Jitsi Meet",
-    position: "Backend",
+    position: Position.BACKEND,
     link: "https://webinars.itmo.xyz/",
   },
   {
     name: "My.ITMO Tools",
     description:
       "Проект позволяющий оптимизировать и улучшить опыт записи на физическую культуру в сервисе My.ITMO",
-    position: "Backend",
+    position: Position.BACKEND,
     link: "https://github.com/nikita-nn/myItmoTools-backend",
   },
   {
     name: "SimpleBanking",
     description:
       "PET проект, предоставляющий базовую функциональность онлайн-банкинга",
-    position: "Frontend + Backend",
+    position: Position.FULLSTACK,
     link: "https://github.com/nikita-nn/SimpleBanking",
   },
 ];
