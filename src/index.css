@@ -11,6 +11,14 @@
   section {
     @apply mt-24 flex flex-col gap-12;
   }
+
+  h1 {
+    @apply lg:text-8xl text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
 }
 
 @layer components {
@@ -22,5 +30,8 @@
   }
   .main-grid {
     @apply grid lg:grid-cols-6 grid-cols-3 gap-9;
+  }
+  .projects-grid {
+    @apply grid lg:grid-cols-2 grid-cols-1 gap-9;
   }
 }
