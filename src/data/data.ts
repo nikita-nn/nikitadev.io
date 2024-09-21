@@ -82,4 +82,11 @@ export const projects: ProjectInfo[] = [
     position: Position.FULLSTACK,
     link: "https://github.com/nikita-nn/SimpleBanking",
   },
+  {
+    name: "Node DevKit for LMS2.0",
+    description:
+      "DevKit для платформы LMS2.0, позволяющий запускать код студента в выделенном процессе и отправлять данные о решениях на сервер",
+    position: Position.BACKEND,
+    link: "https://npmjs.com/package/node-devkit",
+  },
 ];
