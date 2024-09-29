@@ -89,4 +89,11 @@ export const projects: ProjectInfo[] = [
     position: Position.BACKEND,
     link: "https://npmjs.com/package/node-devkit",
   },
+  {
+    name: "Metaverse app",
+    description:
+      "Тестовое задание от https://unicorn.app/, полноценное Web3 приложение с возможностью входа через EVM кошелек MetaMask",
+    position: Position.FRONTEND,
+    link: "https://github.com/nikita-nn/test-task-unicorn",
+  },
 ];

@@ -1,6 +1,5 @@
 import { Position, projects, socials, technologies } from "./data/data.ts";
 export default function App() {
-
   const choosePosition = (position: Position) => {
     switch (position) {
       case Position.BACKEND:
