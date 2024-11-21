@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  #root,
-  body {
-    @apply bg-black lg:p-24 lg:pt-14 p-5 text-white font-mono;
+  #root {
+    @apply bg-black lg:p-48 lg:pt-28 p-10 text-white font-mono duration-1000;
   }
 
   section {
@@ -26,10 +25,10 @@
 
 @layer components {
   .logo {
-    @apply transition-transform hover:scale-110 duration-300;
+    @apply hover:scale-110 duration-300;
   }
   .card {
-    @apply border-[1px] border-white w-full rounded-lg p-5 flex flex-col gap-4 justify-between;
+    @apply border-[1px] border-white w-full rounded-lg p-7 flex flex-col gap-4 justify-between;
   }
   .main-grid {
     @apply grid lg:grid-cols-6 grid-cols-3 gap-9;
@@ -37,4 +36,10 @@
   .projects-grid {
     @apply grid lg:grid-cols-2 grid-cols-1 gap-9;
   }
+}
+
+@layer utilities {
+    .neon {
+      --neon-border-color: #ffffff;
+    }
 }

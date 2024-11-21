@@ -92,8 +92,8 @@ export const projects: ProjectInfo[] = [
   {
     name: "Metaverse app",
     description:
-      "Тестовое задание от https://unicorn.app/, полноценное Web3 приложение с возможностью входа через EVM кошелек MetaMask",
+      "Тестовое задание от https://unistory.app/, полноценное Web3 приложение с возможностью входа через EVM кошелек MetaMask",
     position: Position.FRONTEND,
-    link: "https://github.com/nikita-nn/test-task-unicorn",
+    link: "https://github.com/nikita-nn/test-task-unistory",
   },
 ];
